@@ -1,7 +1,7 @@
 {
   "name": "search-api",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/server",
   "author": "rickynyairo <rickynyairo@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -16,6 +16,7 @@
     "@types/request-promise": "^4.1.42",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
     "express": "5.0.0-alpha.7",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",

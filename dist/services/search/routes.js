@@ -8,6 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const SearchController_1 = require("./SearchController");
 exports.default = [
     {
         path: "/",
@@ -15,6 +16,16 @@ exports.default = [
         handler: (_req, res) => __awaiter(this, void 0, void 0, function* () {
             res.send({ message: "Hello world!" });
         })
+    },
+    {
+        path: "/api/v1/search",
+        method: "get",
+        handler: [
+            ({ query }, res) => __awaiter(this, void 0, void 0, function* () {
+                const result = yield SearchController_1.getPlacesByName(query.q);
+                res.status(200).send(result);
+            })
+        ]
     }
 ];
 //# sourceMappingURL=routes.js.map
