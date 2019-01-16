@@ -1,0 +1,11 @@
+{
+  "name": "search-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "rickynyairo <rickynyairo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tsc-watch": "^1.0.31",
+    "typescript": "^3.2.2"
+  }
+}

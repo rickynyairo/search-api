@@ -1,0 +1,16 @@
+.build/
+.vscode/
+coverage/
+.idea/
+node_modules/
+.awcache/
+*.log
+*.dump
+.env
+.DS_Store
+cypress/screenshots/
+**/coverage
+cypress/videos/
+**/coverage
+*~
+latest.dump*
