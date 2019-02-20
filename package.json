@@ -5,7 +5,12 @@
   "author": "rickynyairo <rickynyairo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+    "dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "start:node": "node ./dist/server.js",
+    "start":"pm2-runtime start ecosystem.config.js --env production"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "dependencies": {
     "@types/compression": "^0.0.36",
@@ -19,6 +24,7 @@
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
     "express": "5.0.0-alpha.7",
+    "pm2": "^3.3.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "swagger-ui-express": "^4.0.2",

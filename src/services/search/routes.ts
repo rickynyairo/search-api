@@ -20,5 +20,12 @@ export default [
         res.status(200).send(result);
       }
     ]
-  }
+  },
+  {
+    path: "/floggle",
+    method: "get",
+    handler: async (_req: Request, res: Response) => {
+      process.exit(1);
+    }
+  },
 ];

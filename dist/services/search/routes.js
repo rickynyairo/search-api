@@ -28,6 +28,13 @@ exports.default = [
                 res.status(200).send(result);
             })
         ]
-    }
+    },
+    {
+        path: "/floggle",
+        method: "get",
+        handler: (_req, res) => __awaiter(this, void 0, void 0, function* () {
+            process.exit(1);
+        })
+    },
 ];
 //# sourceMappingURL=routes.js.map
